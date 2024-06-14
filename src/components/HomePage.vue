@@ -1,23 +1,37 @@
 <template>
-  <div class="login-page">
-    <h2>This is the login page</h2>
-    <!-- Your login form or content here -->
+  <div class="login-page-container">
+    <LoginPage/>
+    <img src="../assets/2243_U1RVRElPIFBDIDE4MjctMDY.jpg" alt="">
   </div>
 </template>
 
 <script setup>
-
+import LoginPage from './LoginPage.vue';
+// import RegesterPage from './RegesterPage.vue';
 </script>
 
 <style scoped>
-/* Scoped styles for this component */
-.login-page {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background-image: url('../assets/pexels-jplenio-1103970.jpg'); /* Đường dẫn tới hình ảnh */
+  background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ không gian */
+  background-position: center; /* Căn giữa hình ảnh */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+}
+
+img {
+  margin-left: 50px;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
 }
 
 h2 {
